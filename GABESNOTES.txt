@@ -1,0 +1,2 @@
+To create a development build for gh-pages, run
+> npm run deploy 

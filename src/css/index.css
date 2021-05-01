@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: arial;
+}
+
+body {
+  background: green;
+  color: grey;
+}
+
+.about {
+  color: white;
+}
+
+button {
+  color: green;
+  background: orange;
+  min-width: 200px;
+}
+/*# sourceMappingURL=index.css.map */

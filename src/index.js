@@ -1,35 +1,26 @@
+"use strict";
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-
-
-// function JordanIsDumb(props) {
-//   return (
-//     <button className="square" onClick={props.onClick}>
-//       Is Jordan Dumb?
-//     </button>
-//   );
-// }
+const e = React.createElement;
 
 class App extends React.Component {
-
-  handleClick() {
-    this.state.isClicked.setState(true);
+  constructor(props) {
+    super(props);
+    this.state = { liked: false };
   }
 
   render() {
-    return (
-      <h2 contentEditable="true">Jordan is Dumb</h2>
-    );
+    if (this.state.liked) {
+      return "You liked this.";
+    }
+
+    return <button onClick={() => this.setState({ liked: true })}>Like</button>;
   }
 }
 
+function App2() {
+  
+  return <button onClick={() => {location.href = '/about.html'}}>About</button>;
+}
 
-// ========================================
-
-ReactDOM.render(<App />, document.getElementById("root"));
-
-
-
-
+const domContainer = document.querySelector(".root");
+ReactDOM.render(e(App2), domContainer);

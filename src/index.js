@@ -17,10 +17,13 @@ class App extends React.Component {
   }
 }
 
-function App2() {
-  
-  return <button onClick={() => {location.href = '/about.html'}}>About</button>;
+function HeroBG() {
+  return (
+    <div className="container">
+      
+    </div>
+  );
 }
 
-const domContainer = document.querySelector(".root");
-ReactDOM.render(e(App2), domContainer);
+const domContainer = document.querySelector(".hero-bg");
+ReactDOM.render(e(HeroBG), domContainer);

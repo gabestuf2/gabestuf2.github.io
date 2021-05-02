@@ -1,20 +1,21 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: arial;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
 }
 body {
-    background: green;
-    color: grey;
+  background: black;
+  color: white;
 }
 .about {
-    color: white;
+  color: white;
 }
 button {
-    color: green;
-    background: orange;
-    min-width: 200px;
+  min-width: 200px;
 }
-
+.hero-bg {
+  background: url("/src/images/backgrounds/ellsworth.jpeg") no-repeat center
+    center fixed;
+  background-size: cover;
+}
